@@ -1,13 +1,10 @@
-##YLBadge
+## YLBadge
 YLBadge is a delightful library for iOS to show a badge on UIView, UIBarButtonItem and UITabBarItem.
 
-##Overview
+## Overview
 ![Overview](./Sceenshots/sceenshots0.png)
 
-##Usage
-
-Just add the folder YLBadge to your project. There are no further requirements.
-
+## Usage
 ```objective-c
 #import "YLBadge.h"
 
@@ -51,6 +48,14 @@ self.testView.yl_badge.maxDigit = 3;
 #### Badge for anywhere
 
 You can create instance of YLBadge, and then add it to anywhere such as UITableViewCell.
+
+
+
+## Installation
+
+If you use Cocoapods, add `pod 'YLBadge', '~> 1.0.0'` to  your Podfile.
+
+If not,  just add the folder YLBadge to your project. There are no further requirements.
 
 
 
