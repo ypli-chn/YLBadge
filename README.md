@@ -53,7 +53,7 @@ You can create instance of YLBadge, and then add it to anywhere such as UITableV
 
 ## Installation
 
-If you use Cocoapods, add `pod 'YLBadge', '~> 1.0.0'` to  your Podfile.
+If you use Cocoapods, add `pod 'YLBadge', '~> 1.0.1'` to  your Podfile.
 
 If not,  just add the folder YLBadge to your project. There are no further requirements.
 
