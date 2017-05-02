@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'YLBadge'
-s.version = '1.0.0'
+s.version = '1.0.1'
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
 s.summary = 'A delightful library for iOS to show a badge on UIView, UIBarButtonItem and UITabBarItem.'
 s.homepage = 'https://github.com/ypli-chn/YLBadge'

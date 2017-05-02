@@ -108,18 +108,12 @@ static CGFloat const YLAutoCornerRadius = -1;
     
     CGRect frame = self.frame;
     if (self.text.length > 0) {
-        if (frame.size.height < YLBadgeDefaultHeight) {
-            frame.size.height = YLBadgeDefaultHeight;
-        }
+        frame.size.height = MAX(frame.size.height, YLBadgeDefaultHeight);
+        frame.size.width = MAX(frame.size.width, YLBadgeDefaultHeight);
         
         CGFloat textWidth = [self sizeForString:self.text autoPadding:YES].width;
-        if (textWidth > self.frame.size.width) {
-            frame.size.width = textWidth;
-        }
-        
-        if (frame.size.width > self.maxWidth) {
-            frame.size.width = self.maxWidth;
-        }
+        frame.size.width = MAX(frame.size.width, textWidth);
+        frame.size.width = MIN(frame.size.width, self.maxWidth);
     }
     
     
